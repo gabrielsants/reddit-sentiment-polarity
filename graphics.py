@@ -41,7 +41,7 @@ def warmthGraphic(palavras_chave, textos):
                 sentimento = blob.sentiment.polarity
                 matriz_linha.append(sentimento)
             else:
-                matriz_linha.append(None)
+                matriz_linha.append(0.0)
         matriz_sentimentos.append(matriz_linha)
         
     sns.heatmap(matriz_sentimentos, annot=True, xticklabels=False, yticklabels=palavras_chave)
