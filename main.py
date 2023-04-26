@@ -69,6 +69,6 @@ if __name__ == "__main__":
             print("Please provide a topic name that you want to search:\n$>. ",end="")
             topic = input()
             print("Please provide some keywords:\n$>. ",end="")
-            key_words = input()
+            key_words = input().split()
             initApplications(topic, key_words)
     
